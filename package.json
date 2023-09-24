@@ -1,0 +1,25 @@
+{
+  "name": "express-music-player",
+  "version": "1.0.0",
+  "description": "Express Audio Streaming",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sivadass/express-audio-player.git"
+  },
+  "keywords": [
+    "nodejs",
+    "serve",
+    "music",
+    "in",
+    "express"
+  ],
+  "author": "Sivadass",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
