@@ -1,7 +1,7 @@
-var express = require("express");
-var fs = require("fs");
-var app = express();
-var port = process.env.BACKEND_PORT || 3003;
+const express = require("express");
+const fs = require("fs");
+const app = express();
+const port = process.env.BACKEND_PORT || 3003;
 
 app.get("/", function(req, res) {
   return res.redirect("/public/home.html");
@@ -13,11 +13,11 @@ app.use("/public", express.static(__dirname + "/public"));
 app.get("/music", function(req, res) {
   // File to be served
 
-  var fileId = req.query.id;
-  var file = __dirname + "/music/" + fileId;
+  const fileId = req.query.id;
+  const file = __dirname + "/music/" + fileId;
   fs.exists(file, function(exists) {
     if (exists) {
-      var rstream = fs.createReadStream(file);
+      const rstream = fs.createReadStream(file);
       rstream.pipe(res);
     } else {
       res.send("Its a 404");
@@ -26,13 +26,13 @@ app.get("/music", function(req, res) {
   });
 });
 app.get("/download", function(req, res) {
-  var fileId = req.query.id;
-  var file = __dirname + "/music/" + fileId;
+  const fileId = req.query.id;
+  const file = __dirname + "/music/" + fileId;
   fs.exists(file, function(exists) {
     if (exists) {
       res.setHeader("Content-disposition", "attachment; filename=" + fileId);
       res.setHeader("Content-Type", "application/audio/mpeg3");
-      var rstream = fs.createReadStream(file);
+      const rstream = fs.createReadStream(file);
       rstream.pipe(res);
     } else {
       res.send("Its a 404");

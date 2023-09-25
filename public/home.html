@@ -5,20 +5,34 @@
     <title>Music Server</title>
   </head>
   <body>
-    <div class="container contents">
-      <audio id="myAudio">
+    <div class="btn-container">
+
+      <!-- <audio id="myAudio">
         <source
           src="http://localhost:3003/music?id=hurt-me-tomorrow.mp3"
           type="audio/mpeg"
         />
         Your browser does not support the audio element.
-      </audio>
+      </audio> -->
+
       <!-- <button class="btn btn-play" onclick="playAudio()" type="button">
       </button> -->
       <!-- <button class="btn btn-pause" onclick="pauseAudio()" type="button">
       </button> -->
-      <button class="btn-reproducer" id="btn-play-pause" onclick="playOrPause()" type="button">
-      </button>
+      <div class="btn-exterior">
+        <button class="btn-inside" id="btn-prev" onclick="prev()" type="button">
+          <<
+        </button>
+      </div>
+      <div class="btn-exterior">
+        <button class="btn-inside" id="btn-play-pause" onclick="playOrPause()" type="button">
+        </button>
+      </div>
+      <div class="btn-exterior">
+        <button class="btn-inside" id="btn-next" onclick="next()" type="button">
+          >>
+        </button>
+      </div>
     </div>
     <!-- <script src="howler.js"></script> -->
     <script src="player.js"></script>

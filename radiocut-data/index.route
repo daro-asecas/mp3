@@ -1,1 +1,33 @@
-https://chunkserver-do.radiocut.site/server/gec/w3w/cndZZTRjaXR5fDE2OTUyOUdEcDE3/
+https://chunkserver-do.radiocut.site/server/gec/w3w/cndZZTRjaXR5fDE2OTUyOUdEcDE3/ //  169592
+
+https://chunkserver-do.radiocut.site/server/gec/w3w/cndZZTRjaXR5fDE2OTUyM0dEcDE3/ //  169593
+
+
+window.btoa('rwYe4city|169523GDp17');
+    'cndZZTRjaXR5fDE2OTUyM0dEcDE3'
+
+window.atob('cndZZTRjaXR5fDE2OTUyOUdEcDE3')
+    'rwYe4city|169529GDp17'
+     |    |   ||     |
+     |    |   ||     L> No se que es
+     |    |   |L> primeros 6 numeros del timestamp (el chunkserver tiene todos los fragmentos de esa radio en ese timestamp)
+     |    L> ID de la radio
+     L> No se que es
+
+window.btoa( << string >> )  ->  Con el codigo entendible me da el codigo para descargar el index:
+                                    https://chunkserver-do.radiocut.site/server/gec/w3w/ << codigo >> /
+
+window.atob( << string >> )  ->  Con el codigo descargable me da el codigo entendible
+
+
+
+El caracter de pad estandar es = pero en radiocut es ~ por lo que tenes que reemplazarlo
+
+atob("...".replaceAll("~", "="))
+btoa("...").replaceAll("=", "~")
+
+
+new Date(1695333990.028 * 1000).toLocaleString()
+    '21/9/2023, 19:06:30'
+
+new Date('1995-12-17T03:24:00').getTime()
